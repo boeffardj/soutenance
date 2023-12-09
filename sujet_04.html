@@ -73,7 +73,28 @@
 </div>
 
 <script type="text/javascript">
+  function  countVowels() {
+        // variable qui sert a recuperer la phrase que tape la personne sur le site   
+        let sentence = document.getElementById("phrase").value;
+        // variable sous forme de tableau qui sert a identifier les voyelles 
+       
+        let count = 0
+        sentenceLength = sentence.length;
+         
+        //boucle qui permet d'avancer d'une element du tableau sentence par un élement 
+        for (let i=0 ; i<sentenceLength; i++ ) {
+           
+            let voyelles = ['a','e','i', 'o','u','y','A','E','I','O','U','Y','é','è','ù','â','ê','î'];
+         
+            // Si dans le tableau sentence est egale a un element du tableau voyelles alors ajouter 1
+            if (sentenceLength == voyelles.lenght ) {
+              
+            count++
+            } 
+        }
+         console.log(count);
 
+    }
     // YOUR CODE HERE
     
     
